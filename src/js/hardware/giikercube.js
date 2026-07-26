@@ -15,7 +15,7 @@ execMain(function() {
 
 	function init(device) {
 		clear();
-		deviceName = device.name.startsWith('Gi') ? 'Giiker' : 'Mi Smart';
+		deviceName = device.name && device.name.startsWith('Gi') ? 'Giiker' : 'Mi Smart';
 		return device.gatt.connect().then(function(gatt) {
 			_gatt = gatt;
 			return gatt.getPrimaryService(SERVICE_UUID_DATA);
