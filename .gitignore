@@ -7,6 +7,3 @@ build.log
 cert.pem
 key.pem
 mi_cube_apk/
-scan_mi_cube.py
-serve_cstimer.py
-build_cstimer.py
